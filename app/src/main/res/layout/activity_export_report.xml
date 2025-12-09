@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/heal_background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Export Your Health Report"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/heal_primary_dark"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- INFO CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:background="@drawable/heal_card_bg"
+            android:elevation="4dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:text="You can export your complete health logs as a TXT or PDF file. The file will be saved in your Downloads folder."
+                android:textColor="@color/heal_text_dark"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- EXPORT TXT -->
+        <Button
+            android:id="@+id/btnExportTxt"
+            style="@style/HealButton"
+            android:text="Export as TXT"/>
+
+        <!-- EXPORT PDF -->
+        <Button
+            android:id="@+id/btnExportPdf"
+            style="@style/HealButton"
+            android:layout_marginTop="16dp"
+            android:text="Export as PDF"/>
+
+    </LinearLayout>
+
+</ScrollView>

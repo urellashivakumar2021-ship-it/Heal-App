@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#F6FAFB"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Admin Sign In"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#0B6166"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etAdminEmail"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etAdminPassword"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnAdminLogin"
+            android:text="LOGIN"
+            android:textAllCaps="true"
+            android:backgroundTint="#0B6166"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Use admin hardcoded credentials for now"
+            android:textSize="12sp"
+            android:textColor="#666"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

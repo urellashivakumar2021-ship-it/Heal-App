@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F7FA">
+
+    <TextView
+        android:id="@+id/txtDocDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doctor Dashboard"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#00796B"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnViewPatients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Patients"
+        android:background="@android:color/white"
+        android:textColor="#00796B"
+        android:padding="12dp"
+        android:elevation="2dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnDocLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:background="@android:color/white"
+        android:textColor="#D32F2F"
+        android:padding="12dp"
+        android:elevation="2dp"
+        android:backgroundTint="@android:color/white" />
+
+</LinearLayout>

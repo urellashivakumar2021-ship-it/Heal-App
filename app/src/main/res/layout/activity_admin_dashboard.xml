@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/heal_background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Admin Dashboard"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/heal_primary_dark"
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <!-- Manage Doctors -->
+        <Button
+            android:id="@+id/btnManageDoctors"
+            style="@style/HealButton"
+            android:text="Manage Doctors" />
+
+        <!-- View Users -->
+        <Button
+            android:id="@+id/btnViewUsers"
+            style="@style/HealButton"
+            android:text="View Users"
+            android:layout_marginTop="16dp" />
+
+        <!-- Logout -->
+        <Button
+            android:id="@+id/btnAdminLogout"
+            style="@style/HealButton"
+            android:text="Logout"
+            android:layout_marginTop="24dp"
+            android:background="@color/heal_primary_dark" />
+
+    </LinearLayout>
+
+</ScrollView>

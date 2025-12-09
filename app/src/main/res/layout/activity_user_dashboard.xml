@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/heal_background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtWelcomeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome User"
+            android:textSize="22sp"
+            android:textColor="@color/heal_text_dark"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            style="@style/HealButton"
+            android:id="@+id/btnTrackHealth"
+            android:text="Track Health"/>
+
+        <Button
+            style="@style/HealButton"
+            android:id="@+id/btnViewHistory"
+            android:text="View History"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            style="@style/HealButton"
+            android:id="@+id/btnInsights"
+            android:text="Insights"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            style="@style/HealButton"
+            android:id="@+id/btnProfile"
+            android:text="Profile"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            style="@style/HealButton"
+            android:id="@+id/btnExportReport"
+            android:text="Export Report"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            style="@style/HealButton"
+            android:id="@+id/btnViewAdvice"
+            android:text="View Advice"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            style="@style/HealButton"
+            android:id="@+id/btnUserLogout"
+            android:text="Logout"
+            android:layout_marginTop="20dp"
+            android:background="@color/heal_primary_dark"/>
+
+    </LinearLayout>
+</ScrollView>

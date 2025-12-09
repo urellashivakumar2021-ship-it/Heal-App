@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/heal_card_bg"
+    android:layout_marginBottom="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtDocName"
+        android:text="Doctor Name"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#003F4F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtDocSpec"
+        android:text="Specialization"
+        android:textSize="14sp"
+        android:textColor="#444"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtDocEmail"
+        android:text="doctor@mail.com"
+        android:textSize="14sp"
+        android:textColor="#444"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- DELETE ONLY -->
+    <Button
+        android:id="@+id/btnDelete"
+        android:text="DELETE"
+        android:backgroundTint="#C62828"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

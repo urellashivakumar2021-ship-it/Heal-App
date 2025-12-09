@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shiva.healapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="HEAL"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- ================= Launcher Activity ================= -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ================= User Module ================= -->
+        <activity android:name=".UserLoginActivity" android:exported="false" />
+        <activity android:name=".RegisterActivity" android:exported="false" />
+        <activity android:name=".UserDashboardActivity" android:exported="false" />
+        <activity android:name=".TrackHealthActivity" android:exported="false" />
+        <activity android:name=".UserHistoryActivity" android:exported="false" />
+        <activity android:name=".InsightsActivity" android:exported="false" />
+        <activity android:name=".UserProfileActivity" android:exported="false" />
+        <activity android:name=".ExportReportActivity" android:exported="false" />
+
+        <!-- User Advice View -->
+        <activity android:name=".UserViewAdviceActivity" android:exported="false" />
+
+        <!-- ================= Doctor Module ================= -->
+        <activity android:name=".DoctorLoginActivity" android:exported="false" />
+        <activity android:name=".DoctorRegisterActivity" android:exported="false" />
+        <activity android:name=".DoctorDashboardActivity" android:exported="false" />
+        <activity android:name=".ViewPatientsActivity" android:exported="false" />
+        <activity android:name=".ViewPatientLogsActivity" android:exported="false" />
+        <activity android:name=".GiveAdviceActivity" android:exported="false" />
+
+        <!-- ================= Admin Module ================= -->
+        <activity android:name=".AdminLoginActivity" android:exported="false" />
+        <activity android:name=".AdminDashboardActivity" android:exported="false" />
+        <activity android:name=".ManageDoctorsActivity" android:exported="false" />
+        <activity android:name=".ViewUsersActivity" android:exported="false" />
+        <activity android:name=".ViewUserLogsActivity" android:exported="false" />
+
+        <!-- ================= Adapter / Model Classes (NOT Activities) ================= -->
+        <!-- These should NOT be added as activities -->
+        <!-- Removed: PatientModel, PatientAdapter, AdviceAdapter, AdviceModel -->
+
+    </application>
+
+</manifest>

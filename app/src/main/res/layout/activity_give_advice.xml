@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/heal_background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/txtAdviceTitle"
+            android:text="Write Advice"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/heal_primary_dark"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Advice Input Box -->
+        <EditText
+            android:id="@+id/etAdvice"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:gravity="start|top"
+            android:hint="Enter advice for the patient..."
+            android:padding="16dp"
+            android:background="@drawable/heal_input_box"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:textSize="16sp"/>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmitAdvice"
+            android:text="Submit Advice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@color/heal_primary"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

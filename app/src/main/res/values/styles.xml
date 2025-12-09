@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- App Theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/heal_primary</item>
+        <item name="android:colorPrimaryDark">@color/heal_primary_dark</item>
+        <item name="android:colorAccent">@color/heal_accent</item>
+        <item name="android:windowBackground">@color/heal_background</item>
+    </style>
+
+    <!-- Medical Rounded Button -->
+    <style name="HealButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@drawable/heal_button_bg</item>
+        <item name="android:textColor">@color/heal_button_text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <!-- Card Style -->
+    <style name="HealCard">
+        <item name="android:background">@color/heal_card_bg</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:elevation">3dp</item>
+    </style>
+
+</resources>

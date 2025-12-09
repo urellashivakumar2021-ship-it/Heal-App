@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:layout_margin="10dp"
+    android:elevation="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:radius="12dp"
+    android:clipToOutline="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <!-- Patient Name -->
+    <TextView
+        android:id="@+id/txtPatientName"
+        android:text="User Name"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#005B63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Email -->
+    <TextView
+        android:id="@+id/txtPatientEmail"
+        android:text="email@example.com"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Last Log -->
+    <TextView
+        android:id="@+id/txtPatientLastLog"
+        android:text="Last Log: --"
+        android:textSize="14sp"
+        android:textColor="#777777"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- View Logs Button -->
+    <Button
+        android:id="@+id/btnViewLogs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VIEW LOGS"
+        android:textAllCaps="false"
+        android:layout_marginTop="14dp"
+        android:background="#0097A7"
+        android:textColor="#FFFFFF"
+        android:padding="10dp" />
+
+</LinearLayout>
