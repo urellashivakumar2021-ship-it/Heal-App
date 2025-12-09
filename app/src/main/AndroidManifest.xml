@@ -8,15 +8,20 @@
         android:label="HEAL"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
-        <!-- ================= Launcher Activity ================= -->
+        <!-- ================= Splash Screen (Launcher Activity) ================= -->
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- ================= Main Activity (Normal Activity) ================= -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
 
         <!-- ================= User Module ================= -->
         <activity android:name=".UserLoginActivity" android:exported="false" />
@@ -27,8 +32,6 @@
         <activity android:name=".InsightsActivity" android:exported="false" />
         <activity android:name=".UserProfileActivity" android:exported="false" />
         <activity android:name=".ExportReportActivity" android:exported="false" />
-
-        <!-- User Advice View -->
         <activity android:name=".UserViewAdviceActivity" android:exported="false" />
 
         <!-- ================= Doctor Module ================= -->
@@ -45,10 +48,6 @@
         <activity android:name=".ManageDoctorsActivity" android:exported="false" />
         <activity android:name=".ViewUsersActivity" android:exported="false" />
         <activity android:name=".ViewUserLogsActivity" android:exported="false" />
-
-        <!-- ================= Adapter / Model Classes (NOT Activities) ================= -->
-        <!-- These should NOT be added as activities -->
-        <!-- Removed: PatientModel, PatientAdapter, AdviceAdapter, AdviceModel -->
 
     </application>
 
