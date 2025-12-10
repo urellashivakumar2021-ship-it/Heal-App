@@ -31,7 +31,15 @@ public class UserDashboardActivity extends AppCompatActivity {
         btnViewAdvice = findViewById(R.id.btnViewAdvice);
         btnLogout = findViewById(R.id.btnUserLogout);
 
-        txtWelcome.setText("Welcome User #" + userId);
+        DBHelper db = new DBHelper(this);
+        String userName = db.getUserNameById(userId);
+
+        if (userName == null || userName.trim().isEmpty()) {
+            txtWelcome.setText("Welcome User");
+        } else {
+            txtWelcome.setText("Welcome " + userName);
+        }
+
 
         btnTrackHealth.setOnClickListener(v -> openActivity(TrackHealthActivity.class));
         btnViewHistory.setOnClickListener(v -> openActivity(UserHistoryActivity.class));

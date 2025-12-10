@@ -225,4 +225,31 @@ public class DBHelper extends SQLiteOpenHelper {
                 new String[]{String.valueOf(userId)}
         );
     }
+
+    // Get user name from users table
+    public String getUserNameById(int userId) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT name FROM users WHERE id = ?", new String[]{String.valueOf(userId)});
+        if (cursor.moveToFirst()) {
+            String name = cursor.getString(0);
+            cursor.close();
+            return name;
+        }
+        cursor.close();
+        return "";
+    }
+
+    // Get doctor name from doctors table
+    public String getDoctorNameById(int doctorId) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT name FROM doctors WHERE id = ?", new String[]{String.valueOf(doctorId)});
+        if (cursor.moveToFirst()) {
+            String name = cursor.getString(0);
+            cursor.close();
+            return name;
+        }
+        cursor.close();
+        return "";
+    }
+
 }

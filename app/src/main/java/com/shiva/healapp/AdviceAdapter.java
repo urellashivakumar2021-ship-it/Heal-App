@@ -34,7 +34,15 @@ public class AdviceAdapter extends RecyclerView.Adapter<AdviceAdapter.AdviceVH> 
         holder.txtTimestamp.setText(a.getTimestamp() != null ? a.getTimestamp() : "");
         holder.txtAdvice.setText(a.getAdviceText() != null ? a.getAdviceText() : "");
         // Show doctor id — replace with name/join if you want doctor name instead
-        holder.txtDoctor.setText("Dr. (ID#" + a.getDoctorId() + ")");
+        DBHelper db = new DBHelper(ctx);
+        String doctorName = db.getDoctorNameById(a.getDoctorId());
+
+        if (doctorName == null || doctorName.trim().isEmpty()) {
+            holder.txtDoctor.setText("Dr. (ID#" + a.getDoctorId() + ")");
+        } else {
+            holder.txtDoctor.setText("Dr. " + doctorName);
+        }
+
     }
 
     @Override
